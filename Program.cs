@@ -16,10 +16,12 @@ namespace CSharpClassProject
 Console.WriteLine("Enter Student Id");
  var studentId = Convert.ToInt32(Console.ReadLine());
 
+ 
 
 
 Console.WriteLine("Enter First Name");
 var studentFirstName = Console.ReadLine();
+    
 
 
 
@@ -66,8 +68,25 @@ studentRecord.LastClassCompletedOn = lastCompletedOn;
 Console.WriteLine($"Student Id | Name |  Class "); ;
 
 Console.WriteLine($"{studentRecord.StudentId} | {studentRecord.FirstName} {studentRecord.LastName} | {studentRecord.ClassName} "); ;
+System.Console.WriteLine("would you like to continue, (y) to continue");
+
+string continueLooping = Console.ReadLine();
+
+             
+     if (continueLooping == "y")
+     {
+
+         continue;
+     }     
+             
+      else  {     
+             
+            break;
+        }
 
 Console.ReadKey(); 
+
+
 
           }
 
